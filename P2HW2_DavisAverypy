@@ -1,0 +1,34 @@
+#Avery Davis
+#2026-09-27
+#P2HW2
+#Module Grades
+
+""""
+Pseudocode:
+1. Prompt the user for six module grades, one input each
+2. Convert each grade to a float
+3. Store the grades in a list
+4. Find the lowest, highest, sum and average using the list
+5. Print the results with aligned columns, average to 2 decimals
+"""
+
+module1 = float(input("Enter grade for module 1: "))
+module2 = float(input("Enter grade for module 2: "))
+module3 = float(input("Enter grade for module 3: "))
+module4 = float(input("Enter grade for module 4: "))
+module5 = float(input("Enter grade for module 5: "))
+module6 = float(input("Enter grade for module 6: "))
+
+grades = [module1, module2, module3, module4, module5, module6]
+lowest = min(grades)
+highest = max(grades)
+total = sum(grades)
+average = total / len(grades)
+
+print()
+print("-------------Results--------------")
+print(f"{'Lowest Grade:':<20}{lowest}")
+print(f"{'Highest Grade:':<20}{highest}")
+print(f"{'sum of grades':<20}{total}")
+print(f"{'Average:':<20}{average:.2f}")
+print("-" * 40)
